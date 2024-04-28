@@ -1,0 +1,12 @@
+version: '3'
+services:
+  imapsync:
+    build: .
+    container_name: imapsync
+    restart: "no"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
